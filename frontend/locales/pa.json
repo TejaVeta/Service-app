@@ -1,0 +1,73 @@
+{
+  "common": {
+    "app_name": "WorkHub",
+    "home": "ਘਰ",
+    "search": "ਖੋਜੋ",
+    "settings": "ਸੈਟਿੰਗਜ਼",
+    "profile": "ਪ੍ਰੋਫਾਈਲ",
+    "wallet": "ਵਾਲਟ",
+    "bookings": "ਮੇਰੀਆਂ ਬੁੱਕਿੰਗਾਂ",
+    "logout": "ਲਾਗ ਆਉਟ",
+    "continue": "ਜਾਰੀ ਰੱਖੋ",
+    "cancel": "ਰੱਦ ਕਰੋ",
+    "confirm": "ਪੁਸ਼ਟੀ ਕਰੋ",
+    "back": "ਵਾਪਸ",
+    "loading": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ..."
+  },
+  "auth": {
+    "welcome": "ਜੀ ਆਇਆਂ ਨੂੰ",
+    "tagline": "ਭਾਰਤ ਦੀ #1 ਸਭ ਤੋਂ ਤੇਜ਼ ਹੁਨਰਮੰਦ ਸੇਵਾ ਐਪ",
+    "phone_number": "ਫ਼ੋਨ ਨੰਬਰ",
+    "enter_phone": "10 ਅੰਕਾਂ ਦਾ ਫ਼ੋਨ ਨੰਬਰ ਦਰਜ ਕਰੋ",
+    "send_otp": "OTP ਭੇਜੋ",
+    "enter_otp": "OTP ਦਰਜ ਕਰੋ",
+    "otp_placeholder": "6 ਅੰਕਾਂ ਦਾ OTP ਦਰਜ ਕਰੋ",
+    "verify_otp": "OTP ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+    "change_number": "ਫ਼ੋਨ ਨੰਬਰ ਬਦਲੋ"
+  },
+  "home": {
+    "home_services": "✨ ਘਰੇਲੂ ਸੇਵਾਵਾਂ ✨",
+    "commercial_services": "✨ ਵਪਾਰਕ ਸੇਵਾਵਾਂ ✨",
+    "browse_services": "ਸਾਰੀਆਂ ਸੇਵਾਵਾਂ ਦੇਖੋ",
+    "promotion": "ਆਪਣੀ ਪਹਿਲੀ ਬੁੱਕਿੰਗ 'ਤੇ 20% ਛੋਟ ਪ੍ਰਾਪਤ ਕਰੋ!"
+  },
+  "services": {
+    "add_to_cart": "ਕਾਰਟ ਵਿੱਚ ਪਾਓ",
+    "view_cart": "ਕਾਰਟ ਦੇਖੋ",
+    "price": "ਕੀਮਤ",
+    "duration": "ਸਮਾਂ"
+  },
+  "cart": {
+    "cart": "ਕਾਰਟ",
+    "empty_cart": "ਤੁਹਾਡੀ ਕਾਰਟ ਖਾਲੀ ਹੈ",
+    "add_services": "ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਸੇਵਾਵਾਂ ਸ਼ਾਮਲ ਕਰੋ",
+    "subtotal": "ਉਪ-ਜੋੜ",
+    "convenience_fee": "ਸੁਵਿਧਾ ਸ਼ੁਲਕ",
+    "tax": "ਟੈਕਸ (18%)",
+    "total": "ਕੁੱਲ ਰਕਮ",
+    "proceed": "ਬੁੱਕਿੰਗ ਲਈ ਅੱਗੇ ਵਧੋ"
+  },
+  "booking": {
+    "service_address": "ਸੇਵਾ ਦਾ ਪਤਾ",
+    "street_address": "ਗਲੀ ਦਾ ਪਤਾ",
+    "city": "ਸ਼ਹਿਰ",
+    "state": "ਰਾਜ",
+    "pincode": "ਪਿਨ ਕੋਡ",
+    "landmark": "ਨਿਸ਼ਾਨਦੇਹੀ (ਵਿਕਲਪਕ)",
+    "select_date_time": "ਤਾਰੀਖ ਅਤੇ ਸਮਾਂ ਚੁਣੋ",
+    "confirm_booking": "ਬੁੱਕਿੰਗ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+    "book_services": "ਸੇਵਾਵਾਂ ਬੁੱਕ ਕਰੋ",
+    "finding_provider": "ਤੁਹਾਡੇ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਸੇਵਾ ਪ੍ਰਦਾਤਾ ਲੱਭ ਰਿਹਾ ਹੈ",
+    "booking_confirmed": "ਬੁੱਕਿੰਗ ਦੀ ਪੁਸ਼ਟੀ ਹੋ ਗਈ!",
+    "booking_id": "ਬੁੱਕਿੰਗ ID"
+  },
+  "profile": {
+    "rewards": "ਪੁਰਸਕਾਰ",
+    "refer_earn": "ਹਵਾਲਾ ਦਿਓ ਅਤੇ ਕਮਾਓ",
+    "app_details": "ਐਪ ਵੇਰਵੇ",
+    "help_support": "ਮਦਦ ਅਤੇ ਸਹਾਇਤਾ"
+  },
+  "language": {
+    "select_language": "ਭਾਸ਼ਾ ਚੁਣੋ"
+  }
+}
