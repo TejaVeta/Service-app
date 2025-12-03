@@ -241,8 +241,13 @@ async def seed_database():
     # Combine all services
     all_services = (
         electrical_services + electrical_commercial_services +
-        plumber_services + painting_services + construction_services +
-        woodwork_services + interior_services + ceiling_services + flooring_services
+        plumber_services + plumber_commercial_services +
+        painting_services + painting_commercial_services +
+        construction_services + construction_commercial_services +
+        flooring_services + flooring_commercial_services +
+        woodwork_services + woodwork_commercial_services +
+        interior_services + interior_commercial_services +
+        ceiling_services + ceiling_commercial_services
     )
     
     await db.services.insert_many(all_services)
