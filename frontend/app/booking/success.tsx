@@ -39,6 +39,19 @@ export default function BookingSuccess() {
           <Text style={styles.bookingId}>{bookingId.slice(-8).toUpperCase()}</Text>
         </View>
 
+        {/* QR Code */}
+        <View style={styles.qrContainer}>
+          <View style={styles.qrCard}>
+            <QRCode
+              value={`BOOKING-${bookingId}`}
+              size={180}
+              backgroundColor={colors.white}
+              color={colors.primary}
+            />
+            <Text style={styles.qrLabel}>Scan to view booking details</Text>
+          </View>
+        </View>
+
         <View style={styles.infoCard}>
           <Ionicons name="information-circle" size={24} color={colors.primary} />
           <Text style={styles.infoText}>
