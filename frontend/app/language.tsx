@@ -6,12 +6,15 @@ import {
   SafeAreaView,
   TouchableOpacity,
   ScrollView,
+  Animated,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import { colors } from '../theme/colors';
 import { useAuthStore } from '../store/authStore';
 import { userAPI } from '../utils/api';
+import { changeLanguage } from '../i18n';
 
 const languages = [
   { code: 'te', name: 'తెలుగు', nativeName: 'Telugu' },
@@ -25,15 +28,37 @@ const languages = [
 
 export default function Language() {
   const router = useRouter();
+  const { t, i18n } = useTranslation();
   const { user, setUser } = useAuthStore();
-  const [selectedLanguage, setSelectedLanguage] = useState(user?.preferred_language || 'English');
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language || 'en');
+  const [checkmarkScale] = useState(new Animated.Value(0));
 
-  const handleSelectLanguage = async (language: string) => {
-    setSelectedLanguage(language);
+  const handleSelectLanguage = async (langCode: string) => {
+    // Animate checkmark
+    Animated.sequence([
+      Animated.spring(checkmarkScale, {
+        toValue: 1.3,
+        friction: 3,
+        useNativeDriver: true,
+      }),
+      Animated.spring(checkmarkScale, {
+        toValue: 1,
+        friction: 3,
+        useNativeDriver: true,
+      }),
+    ]).start();
+
+    setSelectedLanguage(langCode);
+    
+    // Change i18n language
+    await changeLanguage(langCode);
+    
+    // Update user profile if logged in
     if (user) {
       try {
-        await userAPI.updateProfile(user._id, undefined, language);
-        setUser({ ...user, preferred_language: language });
+        const language = languages.find(l => l.code === langCode);
+        await userAPI.updateProfile(user._id, undefined, language?.nativeName || 'English');
+        setUser({ ...user, preferred_language: language?.nativeName || 'English' });
       } catch (error) {
         console.error('Failed to update language:', error);
       }
