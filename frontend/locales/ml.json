@@ -1,0 +1,73 @@
+{
+  "common": {
+    "app_name": "WorkHub",
+    "home": "ഹോം",
+    "search": "തേടൽ",
+    "settings": "സെറ്റിംഗുകൾ",
+    "profile": "പ്രൊഫൈൽ",
+    "wallet": "വാലറ്റ്",
+    "bookings": "എന്റെ ബുക്കിംഗുകൾ",
+    "logout": "ലോഗ് ഔട്ട്",
+    "continue": "തുടരുക",
+    "cancel": "റദ്ദാക്കുക",
+    "confirm": "ഉറപ്പുവരുത്തുക",
+    "back": "തിരിച്ച്",
+    "loading": "ലോഡ് ചെയ്യുന്നു..."
+  },
+  "auth": {
+    "welcome": "സ്വാഗതം",
+    "tagline": "ഇന്ത്യയുടെ #1 വേഗത്തിലുള്ള നൈപുണ്യമുള്ള സേവന ആപ്പ്",
+    "phone_number": "ഫോൺ നംബർ",
+    "enter_phone": "10 അങ്ക ഫോൺ നംബർ നൽകുക",
+    "send_otp": "OTP അയയ്ക്കുക",
+    "enter_otp": "OTP നൽകുക",
+    "otp_placeholder": "6 അങ്ക OTP നൽകുക",
+    "verify_otp": "OTP സത്യാപിക്കുക",
+    "change_number": "ഫോൺ നംബർ മാറ്റുക"
+  },
+  "home": {
+    "home_services": "✨ ഗൃഹ സേവനങ്ങൾ ✨",
+    "commercial_services": "✨ വാണിജ്യ സേവനങ്ങൾ ✨",
+    "browse_services": "എല്ലാ സേവനങ്ങളും പരിശോധിക്കുക",
+    "promotion": "നിങ്ങളുടെ ആദ്യത്തെ ബുക്കിംഗിന് 20% ചാർജ് വെട്ടിപ്പ്!"
+  },
+  "services": {
+    "add_to_cart": "കാർട്ടിലേക്ക് ചേർക്കുക",
+    "view_cart": "കാർട്ട് കാണുക",
+    "price": "വില",
+    "duration": "സമയം"
+  },
+  "cart": {
+    "cart": "കാർട്ട്",
+    "empty_cart": "നിങ്ങളുടെ കാർട്ട് ശൂന്യമാണ്",
+    "add_services": "ആരംഭിക്കാൻ സേവനങ്ങൾ ചേർക്കുക",
+    "subtotal": "ഉപതോത്തല്",
+    "convenience_fee": "സൗകര്യം ഫീസ്",
+    "tax": "നികുതി (18%)",
+    "total": "മൊത്തം തുക",
+    "proceed": "ബുക്കിംഗിലേക്ക് മുന്നോട്ട് പോകുക"
+  },
+  "booking": {
+    "service_address": "സേവന വിലാസം",
+    "street_address": "തെരുവിൽ വിലാസം",
+    "city": "നഗരം",
+    "state": "സംസ്ഥാനം",
+    "pincode": "പിൻകോഡ്",
+    "landmark": "സ്ഥലം ചിഹ്നം (ഐച്ഛികം)",
+    "select_date_time": "തീയതിയും സമയവും തിരഞ്ഞെടുക്കുക",
+    "confirm_booking": "ബുക്കിംഗ് ഉറപ്പുവരുത്തുക",
+    "book_services": "സേവനങ്ങൾ ബുക്ക് ചെയ്യുക",
+    "finding_provider": "നിങ്ങൾക്കായി മികച്ച സേവന ദാതാവിനെ കണ്ടെത്തുന്നു",
+    "booking_confirmed": "ബുക്കിംഗ് ഉറപ്പുവരുത്തി!",
+    "booking_id": "ബുക്കിംഗ് ID"
+  },
+  "profile": {
+    "rewards": "പുരസ്കാരങ്ങൾ",
+    "refer_earn": "റഫർ ചെയ്യുക & സമ്പാദിക്കുക",
+    "app_details": "ആപ്പ് വിവരങ്ങൾ",
+    "help_support": "സഹായവും പിന്തുണയും"
+  },
+  "language": {
+    "select_language": "ഭാഷ തിരഞ്ഞെടുക്കുക"
+  }
+}
