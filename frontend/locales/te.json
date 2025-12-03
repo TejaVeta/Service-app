@@ -1,0 +1,73 @@
+{
+  "common": {
+    "app_name": "వర్క్‌హబ్",
+    "home": "హోమ్",
+    "search": "శోధన",
+    "settings": "సెట్టింగ్‌లు",
+    "profile": "ప్రొఫైల్",
+    "wallet": "వాలెట్",
+    "bookings": "నా బుకింగ్‌లు",
+    "logout": "లాగ్ అవుట్",
+    "continue": "కొనసాగించు",
+    "cancel": "రద్దు చేయి",
+    "confirm": "నిర్ధారించు",
+    "back": "వెనక్కి",
+    "loading": "లోడ్ అవుతోంది..."
+  },
+  "auth": {
+    "welcome": "స్వాగతం",
+    "tagline": "భారతదేశం యొక్క #1 అత్యంత వేగవంతమైన నైపుణ్య సేవా యాప్",
+    "phone_number": "ఫోన్ నంబర్",
+    "enter_phone": "10 అంకెల ఫోన్ నంబర్‌ను నమోదు చేయండి",
+    "send_otp": "OTP పంపండి",
+    "enter_otp": "OTP నమోదు చేయండి",
+    "otp_placeholder": "6 అంకెల OTP నమోదు చేయండి",
+    "verify_otp": "OTP ధృవీకరించండి",
+    "change_number": "ఫోన్ నంబర్ మార్చండి"
+  },
+  "home": {
+    "home_services": "✨ గృహ సేవలు ✨",
+    "commercial_services": "✨ వాణిజ్య సేవలు ✨",
+    "browse_services": "అన్ని సేవలను చూడండి",
+    "promotion": "మీ మొదటి బుకింగ్‌పై 20% తగ్గింపు పొందండి!"
+  },
+  "services": {
+    "add_to_cart": "కార్ట్‌కు జోడించు",
+    "view_cart": "కార్ట్ చూడండి",
+    "price": "ధర",
+    "duration": "వ్యవధి"
+  },
+  "cart": {
+    "cart": "కార్ట్",
+    "empty_cart": "మీ కార్ట్ ఖాళీగా ఉంది",
+    "add_services": "ప్రారంభించడానికి సేవలను జోడించండి",
+    "subtotal": "ఉప మొత్తం",
+    "convenience_fee": "సౌలభ్య రుసుము",
+    "tax": "పన్ను (18%)",
+    "total": "మొత్తం మొత్తం",
+    "proceed": "బుకింగ్‌కు కొనసాగండి"
+  },
+  "booking": {
+    "service_address": "సేవా చిరునామా",
+    "street_address": "వీధి చిరునామా",
+    "city": "నగరం",
+    "state": "రాష్ట్రం",
+    "pincode": "పిన్‌కోడ్",
+    "landmark": "మైలురాయి (ఐచ్ఛికం)",
+    "select_date_time": "తేదీ & సమయం ఎంచుకోండి",
+    "confirm_booking": "బుకింగ్‌ను నిర్ధారించండి",
+    "book_services": "సేవలను బుక్ చేయండి",
+    "finding_provider": "మీ ఉత్తమ సేవా ప్రదాతను కనుగొంటోంది",
+    "booking_confirmed": "బుకింగ్ నిర్ధారించబడింది!",
+    "booking_id": "బుకింగ్ ID"
+  },
+  "profile": {
+    "rewards": "బహుమతులు",
+    "refer_earn": "సూచించండి & సంపాదించండి",
+    "app_details": "యాప్ వివరాలు",
+    "help_support": "సహాయం & మద్దతు"
+  },
+  "language": {
+    "select_language": "భాషను ఎంచుకోండి"
+  }
+}

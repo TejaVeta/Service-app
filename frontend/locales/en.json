@@ -1,0 +1,73 @@
+{
+  "common": {
+    "app_name": "WorkHub",
+    "home": "Home",
+    "search": "Search",
+    "settings": "Settings",
+    "profile": "Profile",
+    "wallet": "Wallet",
+    "bookings": "My Bookings",
+    "logout": "Logout",
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back",
+    "loading": "Loading..."
+  },
+  "auth": {
+    "welcome": "Welcome to",
+    "tagline": "India's #1 Fastest Skilled Service App",
+    "phone_number": "Phone Number",
+    "enter_phone": "Enter 10-digit phone number",
+    "send_otp": "Send OTP",
+    "enter_otp": "Enter OTP",
+    "otp_placeholder": "Enter 6-digit OTP",
+    "verify_otp": "Verify OTP",
+    "change_number": "Change Phone Number"
+  },
+  "home": {
+    "home_services": "✨ Home Services ✨",
+    "commercial_services": "✨ Commercial Services ✨",
+    "browse_services": "Browse All Services",
+    "promotion": "Get 20% off on your first booking!"
+  },
+  "services": {
+    "add_to_cart": "Add to Cart",
+    "view_cart": "View Cart",
+    "price": "Price",
+    "duration": "Duration"
+  },
+  "cart": {
+    "cart": "Cart",
+    "empty_cart": "Your cart is empty",
+    "add_services": "Add services to get started",
+    "subtotal": "Subtotal",
+    "convenience_fee": "Convenience Fee",
+    "tax": "Tax (18%)",
+    "total": "Total Amount",
+    "proceed": "Proceed to Booking"
+  },
+  "booking": {
+    "service_address": "Service Address",
+    "street_address": "Street Address",
+    "city": "City",
+    "state": "State",
+    "pincode": "Pincode",
+    "landmark": "Landmark (Optional)",
+    "select_date_time": "Select Date & Time",
+    "confirm_booking": "Confirm Booking",
+    "book_services": "Book Services",
+    "finding_provider": "Finding your best service provider",
+    "booking_confirmed": "Booking Confirmed!",
+    "booking_id": "Booking ID"
+  },
+  "profile": {
+    "rewards": "Rewards",
+    "refer_earn": "Refer & Earn",
+    "app_details": "App Details",
+    "help_support": "Help & Support"
+  },
+  "language": {
+    "select_language": "Select Language"
+  }
+}

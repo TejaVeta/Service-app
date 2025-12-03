@@ -1,0 +1,73 @@
+{
+  "common": {
+    "app_name": "वर्कहब",
+    "home": "होम",
+    "search": "खोजें",
+    "settings": "सेटिंग्स",
+    "profile": "प्रोफ़ाइल",
+    "wallet": "वॉलेट",
+    "bookings": "मेरी बुकिंग",
+    "logout": "लॉग आउट",
+    "continue": "जारी रखें",
+    "cancel": "रद्द करें",
+    "confirm": "पुष्टि करें",
+    "back": "वापस",
+    "loading": "लोड हो रहा है..."
+  },
+  "auth": {
+    "welcome": "आपका स्वागत है",
+    "tagline": "भारत का #1 सबसे तेज़ कुशल सेवा ऐप",
+    "phone_number": "फ़ोन नंबर",
+    "enter_phone": "10 अंकों का फ़ोन नंबर दर्ज करें",
+    "send_otp": "OTP भेजें",
+    "enter_otp": "OTP दर्ज करें",
+    "otp_placeholder": "6 अंकों का OTP दर्ज करें",
+    "verify_otp": "OTP सत्यापित करें",
+    "change_number": "फ़ोन नंबर बदलें"
+  },
+  "home": {
+    "home_services": "✨ घर की सेवाएं ✨",
+    "commercial_services": "✨ व्यावसायिक सेवाएं ✨",
+    "browse_services": "सभी सेवाएं देखें",
+    "promotion": "अपनी पहली बुकिंग पर 20% की छूट पाएं!"
+  },
+  "services": {
+    "add_to_cart": "कार्ट में जोड़ें",
+    "view_cart": "कार्ट देखें",
+    "price": "कीमत",
+    "duration": "अवधि"
+  },
+  "cart": {
+    "cart": "कार्ट",
+    "empty_cart": "आपका कार्ट खाली है",
+    "add_services": "शुरू करने के लिए सेवाएं जोड़ें",
+    "subtotal": "उप-योग",
+    "convenience_fee": "सुविधा शुल्क",
+    "tax": "कर (18%)",
+    "total": "कुल राशि",
+    "proceed": "बुकिंग के लिए आगे बढ़ें"
+  },
+  "booking": {
+    "service_address": "सेवा का पता",
+    "street_address": "सड़क का पता",
+    "city": "शहर",
+    "state": "राज्य",
+    "pincode": "पिनकोड",
+    "landmark": "स्थल चिह्न (वैकल्पिक)",
+    "select_date_time": "तारीख और समय चुनें",
+    "confirm_booking": "बुकिंग की पुष्टि करें",
+    "book_services": "सेवाएं बुक करें",
+    "finding_provider": "आपके लिए सर्वश्रेष्ठ सेवा प्रदाता खोज रहे हैं",
+    "booking_confirmed": "बुकिंग की पुष्टि हो गई!",
+    "booking_id": "बुकिंग आईडी"
+  },
+  "profile": {
+    "rewards": "पुरस्कार",
+    "refer_earn": "रेफर करें और कमाएं",
+    "app_details": "ऐप विवरण",
+    "help_support": "सहायता और समर्थन"
+  },
+  "language": {
+    "select_language": "भाषा चुनें"
+  }
+}
