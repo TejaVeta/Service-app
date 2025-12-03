@@ -63,12 +63,109 @@ async def seed_database():
     # Seed services for Electrical Works (Commercial)
     electrical_commercial_id = category_ids["Electric Works_commercial"]
     electrical_commercial_services = [
-        {"category_id": electrical_commercial_id, "title": "Full Commercial Wiring", "description": "Complete office/shop wiring", "price": 6000, "duration_minutes": 480},
-        {"category_id": electrical_commercial_id, "title": "3-Phase Electrical Line Work", "description": "Three phase line installation", "price": 12000, "duration_minutes": 360},
-        {"category_id": electrical_commercial_id, "title": "Industrial MCCB/MCB/DB Works", "description": "Distribution board installation", "price": 8000, "duration_minutes": 240},
-        {"category_id": electrical_commercial_id, "title": "Commercial AC Installation", "description": "Commercial AC setup", "price": 4000, "duration_minutes": 180},
-        {"category_id": electrical_commercial_id, "title": "Office UPS Systems", "description": "UPS installation and setup", "price": 7500, "duration_minutes": 240},
-        {"category_id": electrical_commercial_id, "title": "CCTV/Security System Wiring", "description": "Security camera wiring", "price": 3000, "duration_minutes": 180},
+        {"category_id": electrical_commercial_id, "title": "Full Building Wiring", "description": "Complete commercial building wiring", "price": 25000, "duration_minutes": 960},
+        {"category_id": electrical_commercial_id, "title": "3-Phase Electrical Line Installation", "description": "Industrial three phase power line", "price": 18000, "duration_minutes": 480},
+        {"category_id": electrical_commercial_id, "title": "Industrial MCB/MCCB/DB Setup", "description": "Distribution board and circuit protection", "price": 12000, "duration_minutes": 360},
+        {"category_id": electrical_commercial_id, "title": "Commercial AC Installation", "description": "Multi-unit commercial AC setup", "price": 8000, "duration_minutes": 240},
+        {"category_id": electrical_commercial_id, "title": "UPS Power Backup Installation", "description": "Commercial grade UPS system", "price": 15000, "duration_minutes": 300},
+        {"category_id": electrical_commercial_id, "title": "CCTV Security System Wiring", "description": "Complete security camera network", "price": 10000, "duration_minutes": 360},
+        {"category_id": electrical_commercial_id, "title": "Commercial Lighting Layout Setup", "description": "Professional lighting system design", "price": 9000, "duration_minutes": 300},
+        {"category_id": electrical_commercial_id, "title": "Electrical Load Expansion Approval", "description": "Load increase documentation and setup", "price": 20000, "duration_minutes": 480},
+        {"category_id": electrical_commercial_id, "title": "Server Room Electrical Setup", "description": "Dedicated power for server infrastructure", "price": 22000, "duration_minutes": 540},
+        {"category_id": electrical_commercial_id, "title": "Generator Wiring & Maintenance", "description": "Backup generator installation and service", "price": 16000, "duration_minutes": 420},
+    ]
+    
+    # Seed services for Plumbers (Commercial)
+    plumber_commercial_id = category_ids["Plumbers_commercial"]
+    plumber_commercial_services = [
+        {"category_id": plumber_commercial_id, "title": "Commercial Water Line Installation", "description": "Main water supply lines for buildings", "price": 15000, "duration_minutes": 480},
+        {"category_id": plumber_commercial_id, "title": "High-Pressure Pipeline Setup", "description": "Industrial grade high-pressure pipes", "price": 20000, "duration_minutes": 540},
+        {"category_id": plumber_commercial_id, "title": "Industrial Drainage Line Setup", "description": "Large capacity drainage system", "price": 18000, "duration_minutes": 600},
+        {"category_id": plumber_commercial_id, "title": "Commercial Bathroom Fitting Installation", "description": "Multiple bathroom fittings for offices", "price": 12000, "duration_minutes": 420},
+        {"category_id": plumber_commercial_id, "title": "Pump Room Setup", "description": "Water pump room installation and setup", "price": 25000, "duration_minutes": 720},
+        {"category_id": plumber_commercial_id, "title": "Water Tank & Motor Pipeline Connection", "description": "Complete water storage system", "price": 10000, "duration_minutes": 360},
+        {"category_id": plumber_commercial_id, "title": "Industrial Sewage Line Maintenance", "description": "Sewage system cleaning and repair", "price": 8000, "duration_minutes": 300},
+        {"category_id": plumber_commercial_id, "title": "Commercial RO Plant Plumbing", "description": "Water purification system setup", "price": 22000, "duration_minutes": 480},
+        {"category_id": plumber_commercial_id, "title": "Bulk Water Supply Line Repair", "description": "Main line repair and replacement", "price": 14000, "duration_minutes": 420},
+    ]
+    
+    # Seed services for Painting Works (Commercial)
+    painting_commercial_id = category_ids["Painting Works_commercial"]
+    painting_commercial_services = [
+        {"category_id": painting_commercial_id, "title": "Commercial Exterior Painting", "description": "Full building exterior paint", "price": 45000, "duration_minutes": 1440},
+        {"category_id": painting_commercial_id, "title": "Office Interior Painting", "description": "Professional office space painting", "price": 28000, "duration_minutes": 960},
+        {"category_id": painting_commercial_id, "title": "Industrial Paint Coating", "description": "Protective industrial coating", "price": 35000, "duration_minutes": 1200},
+        {"category_id": painting_commercial_id, "title": "Factory Epoxy Painting", "description": "Durable epoxy floor coating", "price": 40000, "duration_minutes": 1440},
+        {"category_id": painting_commercial_id, "title": "Corporate Building Painting", "description": "Premium corporate paint finish", "price": 50000, "duration_minutes": 1680},
+        {"category_id": painting_commercial_id, "title": "Waterproof Paint Coating (Commercial Grade)", "description": "Weather-resistant exterior coating", "price": 32000, "duration_minutes": 1080},
+        {"category_id": painting_commercial_id, "title": "Primer + 2 Coat Commercial Painting", "description": "Professional 3-layer paint system", "price": 38000, "duration_minutes": 1320},
+        {"category_id": painting_commercial_id, "title": "Warehouse Metal Structure Painting", "description": "Industrial metal paint protection", "price": 42000, "duration_minutes": 1440},
+        {"category_id": painting_commercial_id, "title": "Industrial Texture Painting", "description": "Decorative textured finish", "price": 30000, "duration_minutes": 960},
+    ]
+    
+    # Seed services for Construction Works (Commercial)
+    construction_commercial_id = category_ids["Construction Works_commercial"]
+    construction_commercial_services = [
+        {"category_id": construction_commercial_id, "title": "Block Masonry Construction", "description": "Commercial building block work", "price": 60000, "duration_minutes": 1920},
+        {"category_id": construction_commercial_id, "title": "RCC Concrete Slab Work", "description": "Reinforced concrete slab construction", "price": 80000, "duration_minutes": 2400},
+        {"category_id": construction_commercial_id, "title": "Floor Leveling (Industrial)", "description": "Large area floor leveling", "price": 35000, "duration_minutes": 960},
+        {"category_id": construction_commercial_id, "title": "Boundary Wall Construction", "description": "Commercial property boundary wall", "price": 55000, "duration_minutes": 1680},
+        {"category_id": construction_commercial_id, "title": "Shop/Office Renovation", "description": "Complete commercial space renovation", "price": 75000, "duration_minutes": 2160},
+        {"category_id": construction_commercial_id, "title": "Structural Fabrication (Commercial)", "description": "Steel structure fabrication", "price": 65000, "duration_minutes": 1920},
+        {"category_id": construction_commercial_id, "title": "Demolition Works", "description": "Safe commercial demolition service", "price": 40000, "duration_minutes": 960},
+        {"category_id": construction_commercial_id, "title": "Industrial Waterproofing", "description": "Large scale waterproofing solution", "price": 50000, "duration_minutes": 1440},
+        {"category_id": construction_commercial_id, "title": "Multi-Floor Building Repairs", "description": "Structural repair and maintenance", "price": 85000, "duration_minutes": 2400},
+    ]
+    
+    # Seed services for Flooring Works (Commercial)
+    flooring_commercial_id = category_ids["Flooring Works_commercial"]
+    flooring_commercial_services = [
+        {"category_id": flooring_commercial_id, "title": "Commercial Tiles Installation", "description": "High-traffic commercial tiling", "price": 25000, "duration_minutes": 960},
+        {"category_id": flooring_commercial_id, "title": "Granite Flooring Work", "description": "Premium granite floor installation", "price": 45000, "duration_minutes": 1440},
+        {"category_id": flooring_commercial_id, "title": "Industrial Epoxy Flooring", "description": "Chemical-resistant epoxy floor", "price": 55000, "duration_minutes": 1680},
+        {"category_id": flooring_commercial_id, "title": "Marble Cutting & Polishing", "description": "Professional marble work", "price": 38000, "duration_minutes": 1200},
+        {"category_id": flooring_commercial_id, "title": "Cement Screeding & Leveling", "description": "Commercial floor screeding", "price": 28000, "duration_minutes": 960},
+        {"category_id": flooring_commercial_id, "title": "Warehouse Flooring", "description": "Heavy-duty warehouse floor", "price": 65000, "duration_minutes": 1920},
+        {"category_id": flooring_commercial_id, "title": "Anti-Slip Commercial Flooring", "description": "Safety-grade non-slip flooring", "price": 42000, "duration_minutes": 1440},
+        {"category_id": flooring_commercial_id, "title": "Vinyl Flooring (Office Use)", "description": "Modern vinyl floor installation", "price": 30000, "duration_minutes": 960},
+    ]
+    
+    # Seed services for Wood Works (Commercial)
+    woodwork_commercial_id = category_ids["Wood Works_commercial"]
+    woodwork_commercial_services = [
+        {"category_id": woodwork_commercial_id, "title": "Commercial Partition Woodwork", "description": "Office partition installation", "price": 35000, "duration_minutes": 960},
+        {"category_id": woodwork_commercial_id, "title": "Office Workstation Setup", "description": "Modular workstation fabrication", "price": 45000, "duration_minutes": 1200},
+        {"category_id": woodwork_commercial_id, "title": "Wooden Reception Desk Fabrication", "description": "Custom reception desk design", "price": 28000, "duration_minutes": 720},
+        {"category_id": woodwork_commercial_id, "title": "Conference Table Fabrication", "description": "Large conference table setup", "price": 40000, "duration_minutes": 960},
+        {"category_id": woodwork_commercial_id, "title": "Commercial Door Installation", "description": "Fire-rated commercial doors", "price": 15000, "duration_minutes": 480},
+        {"category_id": woodwork_commercial_id, "title": "Wooden Wall Paneling", "description": "Decorative wall panel installation", "price": 50000, "duration_minutes": 1440},
+        {"category_id": woodwork_commercial_id, "title": "Retail Display Unit Manufacturing", "description": "Custom retail display systems", "price": 38000, "duration_minutes": 1200},
+        {"category_id": woodwork_commercial_id, "title": "Storage Cabinets for Commercial Spaces", "description": "Custom storage solutions", "price": 32000, "duration_minutes": 960},
+    ]
+    
+    # Seed services for Interior & Exterior Designs (Commercial)
+    interior_commercial_id = category_ids["Interior & Exterior Designs_commercial"]
+    interior_commercial_services = [
+        {"category_id": interior_commercial_id, "title": "Full Office Interior Design", "description": "Complete office interior solution", "price": 150000, "duration_minutes": 2880},
+        {"category_id": interior_commercial_id, "title": "Corporate Workspace Design", "description": "Modern corporate office design", "price": 180000, "duration_minutes": 3360},
+        {"category_id": interior_commercial_id, "title": "Exterior Elevation Design (3D)", "description": "Building facade design", "price": 85000, "duration_minutes": 1920},
+        {"category_id": interior_commercial_id, "title": "Showroom Interior Design (Premium)", "description": "Luxury showroom interiors", "price": 200000, "duration_minutes": 3840},
+        {"category_id": interior_commercial_id, "title": "Office False Ceiling Design", "description": "Modern ceiling design with lighting", "price": 65000, "duration_minutes": 1440},
+        {"category_id": interior_commercial_id, "title": "Glass Partition + Lighting Design", "description": "Contemporary glass office spaces", "price": 120000, "duration_minutes": 2400},
+        {"category_id": interior_commercial_id, "title": "Commercial Furniture Layout Planning", "description": "Space planning and furniture design", "price": 45000, "duration_minutes": 960},
+        {"category_id": interior_commercial_id, "title": "Industrial Interior Design Package", "description": "Factory/warehouse interior design", "price": 95000, "duration_minutes": 2160},
+    ]
+    
+    # Seed services for Ceiling Works (Commercial)
+    ceiling_commercial_id = category_ids["Ceiling Works_commercial"]
+    ceiling_commercial_services = [
+        {"category_id": ceiling_commercial_id, "title": "Grid Ceiling Installation (Commercial)", "description": "Suspended grid ceiling system", "price": 35000, "duration_minutes": 960},
+        {"category_id": ceiling_commercial_id, "title": "Gypsum Board Ceiling (Office)", "description": "Modern gypsum false ceiling", "price": 28000, "duration_minutes": 720},
+        {"category_id": ceiling_commercial_id, "title": "POP Ceiling for Halls & Shops", "description": "Decorative POP ceiling work", "price": 32000, "duration_minutes": 960},
+        {"category_id": ceiling_commercial_id, "title": "LED Panel Installation (Commercial)", "description": "Integrated LED ceiling panels", "price": 42000, "duration_minutes": 1080},
+        {"category_id": ceiling_commercial_id, "title": "Acoustic Soundproof Ceiling", "description": "Sound-absorbing ceiling tiles", "price": 55000, "duration_minutes": 1440},
+        {"category_id": ceiling_commercial_id, "title": "High-Rise Ceiling Works", "description": "Ceiling work for tall buildings", "price": 65000, "duration_minutes": 1680},
+        {"category_id": ceiling_commercial_id, "title": "Industrial Aluminum Ceiling Installation", "description": "Durable aluminum ceiling system", "price": 48000, "duration_minutes": 1200},
     ]
     
     # Seed services for Plumbers (Home)
