@@ -150,6 +150,27 @@ const styles = StyleSheet.create({
     color: colors.primary,
     letterSpacing: 2,
   },
+  qrContainer: {
+    alignItems: 'center',
+    marginBottom: 24,
+  },
+  qrCard: {
+    backgroundColor: colors.white,
+    padding: 24,
+    borderRadius: 16,
+    alignItems: 'center',
+    shadowColor: colors.shadow,
+    shadowOffset: { width: 0, y: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  qrLabel: {
+    fontSize: 14,
+    color: colors.textLight,
+    marginTop: 12,
+    textAlign: 'center',
+  },
   infoCard: {
     flexDirection: 'row',
     backgroundColor: '#EFF6FF',
