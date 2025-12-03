@@ -71,7 +71,7 @@ export default function Language() {
         <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
           <Ionicons name="arrow-back" size={24} color={colors.text} />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Select Language</Text>
+        <Text style={styles.headerTitle}>{t('language.select_language')}</Text>
         <View style={{ width: 40 }} />
       </View>
 
@@ -82,19 +82,19 @@ export default function Language() {
               key={language.code}
               style={[
                 styles.languageCard,
-                selectedLanguage === language.nativeName && styles.selectedCard,
+                selectedLanguage === language.code && styles.selectedCard,
               ]}
-              onPress={() => handleSelectLanguage(language.nativeName)}
+              onPress={() => handleSelectLanguage(language.code)}
               activeOpacity={0.7}
             >
               <View style={styles.languageInfo}>
                 <Text style={styles.languageName}>{language.name}</Text>
                 <Text style={styles.languageNative}>{language.nativeName}</Text>
               </View>
-              {selectedLanguage === language.nativeName && (
-                <View style={styles.checkmark}>
+              {selectedLanguage === language.code && (
+                <Animated.View style={[styles.checkmark, { transform: [{ scale: checkmarkScale }] }]}>
                   <Ionicons name="checkmark-circle" size={32} color={colors.success} />
-                </View>
+                </Animated.View>
               )}
             </TouchableOpacity>
           ))}
