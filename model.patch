@@ -1,73 +1,116 @@
-diff --git a/README.md b/README.md
-index 3786c8a..05d01b7 100644
---- a/README.md
-+++ b/README.md
-@@ -1 +1,67 @@
--# Here are your Instructions
-+# WorkHub - On-Demand Home & Commercial Services Marketplace
-+
-+## 🎯 Project Overview
-+
-+WorkHub (ZenyFix) is a mobile-first marketplace connecting customers with skilled service providers for home and commercial services. This MVP focuses on the **Customer App** with core booking functionality.
-+
-+## ✨ Features Implemented
-+
-+### Customer App (MVP)
-+- **Authentication**: Phone-based login with OTP verification (demo mode)
-+- **Home Screen**: Beautiful gradient cards for Home & Commercial services
-+- **Service Categories**: 8 categories each for Home and Commercial (Construction, Plumbing, Electrical, Painting, Flooring, Wood Works, Interior Design, Ceiling)
-+- **Service Listing**: 49+ services with prices and descriptions
-+- **Add to Cart**: Real-time cart management with quantity controls
-+- **Booking Flow**: 
-+  - Address entry
-+  - Date & time selection
-+  - Booking confirmation with price breakdown
-+  - "Finding Provider" screen with animated timer (3:00)
-+  - Booking success screen
-+- **Profile Management**: User profile, language selection (7 languages), wallet
-+- **My Bookings**: View all past and current bookings with status
-+- **Multi-language Support**: Telugu, English, Hindi, Tamil, Kannada, Malayalam, Punjabi
-+
-+### Design System
-+- **Soft, Premium UI**: Rounded cards, smooth gradients, subtle shadows
-+- **Color Palette**: Primary gradient (#2563EB → #4F46E5), Accent (#FACC15)
-+- **Typography**: Clean, readable fonts with consistent sizing
-+- **Animations**: Smooth transitions, circular timer animation, press effects
-+
-+## 🏗️ Tech Stack
-+
-+### Frontend (Mobile)
-+- **Framework**: React Native (Expo)
-+- **Navigation**: Expo Router (file-based routing)
-+- **State Management**: Zustand
-+- **HTTP Client**: Axios
-+- **UI Components**: Custom components with Expo Vector Icons
-+- **Styling**: StyleSheet with theme system
-+
-+### Backend
-+- **API Framework**: FastAPI (Python)
-+- **Database**: MongoDB with Motor (async driver)
-+- **Authentication**: Mock OTP (production-ready structure)
-+- **CORS**: Enabled for all origins
-+
-+## 🚀 Quick Start
-+
-+### Demo Credentials
-+- Phone: `9876543210` (or any 10-digit number)
-+- OTP: `123456` (any 6-digit code works in demo mode)
-+
-+### Services
-+- Backend API: Port 8001
-+- Expo Frontend: Port 3000
-+
-+## 📝 Key Screens
-+1. **Login**: Phone + OTP authentication
-+2. **Home**: Service category cards
-+3. **Services**: Browse and add to cart
-+4. **Cart**: Manage items and quantities
-+5. **Booking**: Address → Date/Time → Confirm
-+6. **Finding Provider**: Animated 3-minute timer
-+7. **Success**: Booking confirmation
-+8. **My Bookings**: View booking history
-+
-+## 🎯 MVP Status: ✅ Complete
+diff --git a/frontend/app/language.tsx b/frontend/app/language.tsx
+index 412ea9c..7251a14 100644
+--- a/frontend/app/language.tsx
++++ b/frontend/app/language.tsx
+@@ -71,7 +71,7 @@ export default function Language() {
+         <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+           <Ionicons name="arrow-back" size={24} color={colors.text} />
+         </TouchableOpacity>
+-        <Text style={styles.headerTitle}>Select Language</Text>
++        <Text style={styles.headerTitle}>{t('language.select_language')}</Text>
+         <View style={{ width: 40 }} />
+       </View>
+ 
+@@ -82,19 +82,19 @@ export default function Language() {
+               key={language.code}
+               style={[
+                 styles.languageCard,
+-                selectedLanguage === language.nativeName && styles.selectedCard,
++                selectedLanguage === language.code && styles.selectedCard,
+               ]}
+-              onPress={() => handleSelectLanguage(language.nativeName)}
++              onPress={() => handleSelectLanguage(language.code)}
+               activeOpacity={0.7}
+             >
+               <View style={styles.languageInfo}>
+                 <Text style={styles.languageName}>{language.name}</Text>
+                 <Text style={styles.languageNative}>{language.nativeName}</Text>
+               </View>
+-              {selectedLanguage === language.nativeName && (
+-                <View style={styles.checkmark}>
++              {selectedLanguage === language.code && (
++                <Animated.View style={[styles.checkmark, { transform: [{ scale: checkmarkScale }] }]}>
+                   <Ionicons name="checkmark-circle" size={32} color={colors.success} />
+-                </View>
++                </Animated.View>
+               )}
+             </TouchableOpacity>
+           ))}
+diff --git a/model.patch b/model.patch
+index 4916a3d..e69de29 100644
+--- a/model.patch
++++ b/model.patch
+@@ -1,73 +0,0 @@
+-diff --git a/README.md b/README.md
+-index 3786c8a..05d01b7 100644
+---- a/README.md
+-+++ b/README.md
+-@@ -1 +1,67 @@
+--# Here are your Instructions
+-+# WorkHub - On-Demand Home & Commercial Services Marketplace
+-+
+-+## 🎯 Project Overview
+-+
+-+WorkHub (ZenyFix) is a mobile-first marketplace connecting customers with skilled service providers for home and commercial services. This MVP focuses on the **Customer App** with core booking functionality.
+-+
+-+## ✨ Features Implemented
+-+
+-+### Customer App (MVP)
+-+- **Authentication**: Phone-based login with OTP verification (demo mode)
+-+- **Home Screen**: Beautiful gradient cards for Home & Commercial services
+-+- **Service Categories**: 8 categories each for Home and Commercial (Construction, Plumbing, Electrical, Painting, Flooring, Wood Works, Interior Design, Ceiling)
+-+- **Service Listing**: 49+ services with prices and descriptions
+-+- **Add to Cart**: Real-time cart management with quantity controls
+-+- **Booking Flow**: 
+-+  - Address entry
+-+  - Date & time selection
+-+  - Booking confirmation with price breakdown
+-+  - "Finding Provider" screen with animated timer (3:00)
+-+  - Booking success screen
+-+- **Profile Management**: User profile, language selection (7 languages), wallet
+-+- **My Bookings**: View all past and current bookings with status
+-+- **Multi-language Support**: Telugu, English, Hindi, Tamil, Kannada, Malayalam, Punjabi
+-+
+-+### Design System
+-+- **Soft, Premium UI**: Rounded cards, smooth gradients, subtle shadows
+-+- **Color Palette**: Primary gradient (#2563EB → #4F46E5), Accent (#FACC15)
+-+- **Typography**: Clean, readable fonts with consistent sizing
+-+- **Animations**: Smooth transitions, circular timer animation, press effects
+-+
+-+## 🏗️ Tech Stack
+-+
+-+### Frontend (Mobile)
+-+- **Framework**: React Native (Expo)
+-+- **Navigation**: Expo Router (file-based routing)
+-+- **State Management**: Zustand
+-+- **HTTP Client**: Axios
+-+- **UI Components**: Custom components with Expo Vector Icons
+-+- **Styling**: StyleSheet with theme system
+-+
+-+### Backend
+-+- **API Framework**: FastAPI (Python)
+-+- **Database**: MongoDB with Motor (async driver)
+-+- **Authentication**: Mock OTP (production-ready structure)
+-+- **CORS**: Enabled for all origins
+-+
+-+## 🚀 Quick Start
+-+
+-+### Demo Credentials
+-+- Phone: `9876543210` (or any 10-digit number)
+-+- OTP: `123456` (any 6-digit code works in demo mode)
+-+
+-+### Services
+-+- Backend API: Port 8001
+-+- Expo Frontend: Port 3000
+-+
+-+## 📝 Key Screens
+-+1. **Login**: Phone + OTP authentication
+-+2. **Home**: Service category cards
+-+3. **Services**: Browse and add to cart
+-+4. **Cart**: Manage items and quantities
+-+5. **Booking**: Address → Date/Time → Confirm
+-+6. **Finding Provider**: Animated 3-minute timer
+-+7. **Success**: Booking confirmation
+-+8. **My Bookings**: View booking history
+-+
+-+## 🎯 MVP Status: ✅ Complete
